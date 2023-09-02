@@ -1,0 +1,2 @@
+npx scully --project portfolio --scanRoutes
+npx scully serve

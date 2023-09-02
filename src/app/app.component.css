@@ -1,0 +1,18 @@
+/* Stile per la colonna di sinistra */
+.col-md-3.left-column {
+    background-color: #f7f7f7; /* Colore di sfondo leggermente grigio */
+    border-right: 2px solid #e0e0e0; /* Linea di delimitazione */
+    padding: 20px; /* Spazio intorno al contenuto */
+}
+
+/* Stile per il contenuto principale */
+.col-md-6 {
+    padding: 20px;
+}
+
+/* Stile per la colonna di sinistra */
+.col-md-3.right-column {
+    background-color: #f7f7f7; /* Colore di sfondo leggermente grigio */
+    border-left: 2px solid #e0e0e0; /* Linea di delimitazione */
+    padding: 20px; /* Spazio intorno al contenuto */
+}

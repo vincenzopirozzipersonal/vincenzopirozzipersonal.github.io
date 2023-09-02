@@ -1,0 +1,23 @@
+
+
+.border-right {
+    border-right: 2px solid #333; /* Adjust color and width as needed */
+  }
+
+  .border-left {
+    border-left: 2px solid #333; /* Adjust color and width as needed */
+  }
+
+  .border-both {
+    border-left: 2px solid #333; /* Adjust color and width as needed */
+    border-right: 2px solid #333; /* Adjust color and width as needed */
+  }
+
+  .highlighted-box {
+    border: 1px solid #e0e0e0; /* Colore del bordo */
+    border-radius: 10px; /* Angoli arrotondati */
+    background-color: #fafafa; /* Colore di sfondo leggermente grigio */
+    padding: 20px; /* Spazio interno */
+    margin: 20px 0; /* Spazio esterno sopra e sotto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}

@@ -1,0 +1,22 @@
+<div class="d-flex flex-column justify-content-center align-items-center w-100 text-center" *ngIf="bio$ | async as bio">
+  <div class="d-flex flex-column min-vh-95 justify-content-center align-items-center w-100">
+      <div *ngFor="let options of respOptions" [ngClass]="options.viewClasses"
+          class="flex-column justify-content-center align-items-start text-center">
+          <h1 [ngClass]="options.headingClass">Hello, 👋. My name is <span
+                  class="font-weight-bold">{{bio.firstName+'
+                  '+bio.lastName}}.</span></h1>
+          <div *ngFor="let par of bio.intro">
+              <h6 *ngIf="!options.useSmallerHeadings">{{par}}</h6>
+              <h5 *ngIf="options.useSmallerHeadings">{{par}}</h5>
+          </div>
+          <div class="d-flex flex-column min-vh-95 justify-content-center align-items-center w-100">
+            <div class="highlighted-box">
+              <h4 *ngIf="!options.useSmallerHeadings">Are you new to PineConnector?
+                Begin your TradingConnector journey here.</h4>
+              <h6 *ngIf="options.useSmallerHeadings">Are you new to PineConnector?
+                Begin your TradingConnector journey here.</h6>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

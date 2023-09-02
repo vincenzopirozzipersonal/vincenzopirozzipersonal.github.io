@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Left Column -->
+    <div class="col-12 col-md-2 border-right d-none d-md-block">
+      <h5><a routerLink="/getting-started">Getting Started</a></h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </div>
+
+
+    <!-- Central (Main) Column -->
+    <div class="col-12 col-md-8 border-both text-center">
+      <div *ngIf="bio$ | async as bio">
+        <!-- Desktop Version -->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-3 mb-4">Hello, 👋. My name is <span class="font-weight-bold">{{ bio.firstName + " " + bio.lastName }}.</span></h1>
+          <div *ngFor="let par of bio.intro">
+            <h5 [style.font-weight]="'300'">{{ par }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-12 col-md-2 border-left d-none d-md-block">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </div>
+
+  </div>
+</div>

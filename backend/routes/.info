@@ -1,0 +1,2 @@
+auth.js   # Authentication routes (signup, login, etc.)
+iindex.js #Main file to combine all routes
