@@ -13,8 +13,9 @@ export class HeaderComponent {
 
   menuItems = [
     { title: 'About Me', homePath: '/', fragment: 'about', pagePath: '/about' },
-    { title: 'Login', homePath: '/', fragment: 'login', pagePath: '/login' },
-    { title: 'My Blog', homePath: '/blog', fragment: '', pagePath: '/blog' }
+    { title: 'My Blog', homePath: '/blog', fragment: '', pagePath: '/blog' },
+    { title: 'Login', homePath: '/login', fragment: '', pagePath: '/login' },
+    { title: 'Register', homePath: '/register', fragment: '', pagePath: '/register' }
   ];
 
   constructor(private bioService: BioService, private headerService: HeaderService) { }
